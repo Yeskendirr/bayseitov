@@ -1,0 +1,559 @@
+  /* Адаптивка менее 450 пикселей */
+
+  @media (max-width: 450px) {
+  	.social-icon {
+  		font-size: 40px;
+  		margin: 0 20px;
+  	}
+  }
+
+  /* Адаптивка более 580 пикселей */
+
+  @media (min-width: 580px) {
+
+  	:root {
+
+  		/* Размеры текстов */
+
+  		--fs-1: 32px;
+  		--fs-2: 24px;
+  		--fs-3: 26px;
+  		--fs-4: 18px;
+  		--fs-6: 15px;
+  		--fs-7: 15px;
+  		--fs-8: 12px;
+  	}
+
+  	/* Повторно используемые стили */
+
+  	.sidebar,
+  	article {
+  		width: 520px;
+  		margin-inline: auto;
+  		padding: 30px;
+  	}
+
+  	.article-title {
+  		font-weight: var(--fw-600);
+  		padding-bottom: 15px;
+  	}
+
+  	.article-title::after {
+  		width: 40px;
+  		height: 5px;
+  	}
+
+  	.icon-box {
+  		width: 48px;
+  		height: 48px;
+  		border-radius: 12px;
+  		font-size: 18px;
+  	}
+
+  	/* Главное */
+
+  	main {
+  		margin-top: 60px;
+  		margin-bottom: 100px;
+  	}
+
+  	/* Левая панель */
+
+  	.sidebar {
+  		max-height: 180px;
+  		margin-bottom: 30px;
+  	}
+
+  	.sidebar.active {
+  		max-height: 584px;
+  	}
+
+  	.sidebar-info {
+  		gap: 25px;
+  	}
+
+  	.avatar-box {
+  		border-radius: 30px;
+  	}
+
+  	.avatar-box img {
+  		width: 120px;
+  		border-radius: 25px;
+  	}
+
+  	.info-content .name {
+  		margin-bottom: 15px;
+  	}
+
+  	.info-content .title {
+  		padding: 5px 18px;
+  	}
+
+  	.info_more-btn {
+  		top: -30px;
+  		right: -30px;
+  		padding: 10px 15px;
+  	}
+
+  	.info_more-btn span {
+  		display: block;
+  		font-size: var(--fs-8);
+  	}
+
+  	.info_more-btn ion-icon {
+  		display: none;
+  	}
+
+  	.separator {
+  		margin: 32px 0;
+  	}
+
+  	.contacts-list {
+  		gap: 20px;
+  	}
+
+  	.contact-info {
+  		max-width: calc(100% - 64px);
+  		width: calc(100% - 64px);
+  	}
+
+  	/* Панель навигаций */
+
+  	.navbar {
+  		border-radius: 20px 20px 0 0;
+  	}
+
+  	.navbar-list {
+  		gap: 20px;
+  	}
+
+  	.navbar-link {
+  		--fs-8: 14px;
+  		font-weight: bold;
+  	}
+
+  	/* Обо мне */
+
+  	.about .article-title {
+  		margin-bottom: 20px;
+  	}
+
+  	.about-text {
+  		margin-bottom: 40px;
+  	}
+
+  	/* Услуги */
+
+  	.service-item {
+  		display: flex;
+  		justify-content: flex-start;
+  		align-items: flex-start;
+  		gap: 18px;
+  		padding: 30px;
+  	}
+
+
+  	.service-icon-box {
+  		margin-bottom: 0;
+  		margin-top: 5px;
+  	}
+
+  	.service-content-box {
+  		text-align: left;
+  	}
+
+  	/* Кому подойдут услуги: */
+
+  	.comment-title {
+  		margin-bottom: 25px;
+  	}
+
+  	.comment-list {
+  		gap: 30px;
+  		margin: 0 -30px;
+  		padding: 30px;
+  		padding-bottom: 35px;
+  	}
+
+  	.content-card {
+  		padding: 30px;
+  		padding-top: 25px;
+  	}
+
+  	.comment-avatar-box {
+  		transform: translate(30px, -30px);
+  		border-radius: 20px;
+  	}
+
+  	.comment-avatar-box img {
+  		width: 80px;
+  	}
+
+  	.comment-item-title {
+  		margin-bottom: 10px;
+  		margin-left: 95px;
+  	}
+
+  	.comment-text {
+  		line-clamp: 2;
+  		-webkit-line-clamp: 2;
+  	}
+
+  	.comment-item:hover .content-card {
+  		opacity: 0.3;
+  		transition: opacity 0.5s ease;
+  	}
+
+  	.comment-modal:hover {
+  		opacity: 0.8;
+  		transition: opacity 0.3s ease;
+  	}
+
+
+  	/* Окно при нажатий */
+
+  	.modal-container {
+  		padding: 20px;
+  	}
+
+  	.comment-modal {
+  		display: flex;
+  		justify-content: flex-start;
+  		align-items: stretch;
+  		gap: 25px;
+  		padding: 30px;
+  		border-radius: 20px;
+  	}
+
+  	.modal-img-wrapper {
+  		display: flex;
+  		flex-direction: column;
+  		align-items: center;
+  	}
+
+  	.modal-avatar-box {
+  		border-radius: 18px;
+  		margin-bottom: 0;
+  	}
+
+  	.modal-avatar-box img {
+  		width: 65px;
+  	}
+
+  	.modal-img-wrapper>img {
+  		display: block;
+  		flex-grow: 1;
+  		width: 35px;
+  	}
+
+  	/* Резюме */
+
+  	.timeline-list {
+  		margin-left: 65px;
+  	}
+
+  	.timeline-item:not(:last-child)::before {
+  		left: -40px;
+  	}
+
+  	.timeline-item::after {
+  		height: 8px;
+  		width: 8px;
+  		left: -43px;
+  	}
+
+  	.skills-item:not(:last-child) {
+  		margin-bottom: 25px;
+  	}
+
+  	/* Контакты */
+
+  	.mapbox {
+  		height: 390px;
+  		border-radius: 18px;
+  	}
+
+
+  }
+
+  /* Адаптивка более 768 пикселей */
+
+  @media (min-width: 768px) {
+
+  	/* Повторно используемые стили */
+
+  	.sidebar,
+  	article {
+  		width: 700px;
+  	}
+
+  	.has-scrollbar::-webkit-scrollbar-button {
+  		width: 100px;
+  	}
+
+  	/* Левая панель */
+
+  	.contacts-list {
+  		grid-template-columns: 1fr 1fr;
+  		gap: 30px 15px;
+  	}
+
+  	/* Панель навигаций */
+
+  	.navbar-link {
+  		--fs-8: 15px;
+  	}
+
+  	/* Окно при нажатий */
+
+  	.comment-modal {
+  		gap: 35px;
+  		max-width: 680px;
+  	}
+
+  	.modal-avatar-box img {
+  		width: 80px;
+  	}
+
+  	/* Услуги */
+
+  	.article-title {
+  		padding-bottom: 20px;
+  	}
+
+  	.filter-select-box {
+  		display: none;
+  	}
+
+  	.filter-list {
+  		display: flex;
+  		justify-content: flex-start;
+  		align-items: center;
+  		gap: 25px;
+  		padding-left: 5px;
+  		margin-bottom: 30px;
+  	}
+
+  	.filter-item button {
+  		color: var(--light-gray);
+  		font-size: var(--fs-5);
+  		transition: var(--transition-1);
+  	}
+
+  	.filter-item button:hover {
+  		color: var(--light-gray-70);
+  	}
+
+  	.filter-item button.active {
+  		color: var(--orange-yellow-crayola);
+  	}
+  }
+
+  /* Адаптивка более 1024 пикселей */
+
+  @media (min-width: 1024px) {
+
+  	:root {
+
+  		/* Тени */
+
+  		--shadow-1: -4px 8px 24px hsla(0, 0%, 0%, 0.125);
+  		--shadow-2: 0 16px 30px hsla(0, 0%, 0%, 0.125);
+  		--shadow-3: 0 16px 40px hsla(0, 0%, 0%, 0.125);
+
+  	}
+
+  	/* Повторно используемые стили */
+
+  	.sidebar,
+  	article {
+  		width: 950px;
+  		box-shadow: var(--shadow-5);
+  	}
+
+
+
+  	/* Главное */
+
+  	main {
+  		margin-bottom: 60px;
+  	}
+
+  	.main-content {
+  		position: relative;
+  		width: max-content;
+  		margin: auto;
+  	}
+
+
+
+  	/* Панель навигаций */
+
+  	.navbar {
+  		position: absolute;
+  		bottom: auto;
+  		top: 0;
+  		left: auto;
+  		right: 0;
+  		width: max-content;
+  		border-radius: 0 20px;
+  		padding: 0 20px;
+  		box-shadow: none;
+  	}
+
+  	.navbar-list {
+  		gap: 30px;
+  		padding: 0 20px;
+  	}
+
+  	.navbar-link {
+  		font-weight: var(--fw-500);
+  	}
+
+  	/* Услуги */
+
+  	.service-list {
+  		grid-template-columns: 1fr 1fr;
+  		gap: 20px 25px;
+  	}
+
+  	/* Кому подойдут услуги */
+
+  	.comment-item {
+  		min-width: calc(50% - 15px);
+  	}
+
+  	/* Услуги */
+
+  	.project-list {
+  		grid-template-columns: repeat(3, 1fr);
+  	}
+  }
+
+  /* Адаптивка более 1250 пикселей */
+
+  @media (min-width: 1250px) {
+
+  	/* Сброс стилей*/
+
+  	body::-webkit-scrollbar {
+  		width: 20px;
+  	}
+
+  	body::-webkit-scrollbar-track {
+  		background: var(--smoky-black);
+  	}
+
+  	body::-webkit-scrollbar-thumb {
+  		border: 5px solid var(--smoky-black);
+  		background: hsla(0, 0%, 100%, 0.1);
+  		border-radius: 20px;
+  		box-shadow: inset 1px 1px 0 hsla(0, 0%, 100%, 0.11),
+  			inset -1px -1px 0 hsla(0, 0%, 100%, 0.11);
+  	}
+
+  	body::-webkit-scrollbar-thumb:hover {
+  		background: hsla(0, 0%, 100%, 0.15);
+  	}
+
+  	body::-webkit-scrollbar-button {
+  		height: 60px;
+  	}
+
+  	/* Повторно используемые стили */
+
+  	.sidebar,
+  	article {
+  		width: auto;
+  	}
+
+  	article {
+  		min-height: 100%;
+  	}
+
+  	/* Главное */
+
+  	main {
+  		max-width: 1200px;
+  		margin-inline: auto;
+  		display: flex;
+  		justify-content: center;
+  		align-items: stretch;
+  		gap: 25px;
+  	}
+
+  	.main-content {
+  		min-width: 75%;
+  		width: 75%;
+  		margin: 0;
+  	}
+
+  	/* Левая панель */
+
+  	.sidebar {
+  		position: sticky;
+  		top: 60px;
+  		max-height: max-content;
+  		height: 100%;
+  		margin-bottom: 0;
+  		padding-top: 60px;
+  		z-index: 1;
+  	}
+
+  	.sidebar-info {
+  		flex-direction: column;
+  	}
+
+  	.avatar-box img {
+  		width: 150px;
+  		border-radius: 25px;
+  	}
+
+  	.info-content .name {
+  		white-space: nowrap;
+  		text-align: center;
+  	}
+
+  	.info-content .title {
+  		margin: auto;
+  	}
+
+  	.info_more-btn {
+  		display: none;
+  	}
+
+  	.sidebar-info_more {
+  		opacity: 1;
+  		visibility: visible;
+  	}
+
+  	.contacts-list {
+  		grid-template-columns: 1fr;
+  	}
+
+  	.contact-info :is(.contact-link) {
+  		white-space: nowrap;
+  		overflow: hidden;
+  		text-overflow: ellipsis;
+  	}
+
+  	.contact-info :is(.contact-link, time, address) {
+  		--fs-7: 14px;
+  		font-weight: var(--fw-300);
+  	}
+
+  	.separator:last-of-type {
+  		margin: 15px 0;
+  		opacity: 0;
+  	}
+
+  	.social-list {
+  		justify-content: center;
+  	}
+
+  	/* Резюме */
+
+  	.timeline-text {
+  		max-width: 700px;
+  	}
+  }
